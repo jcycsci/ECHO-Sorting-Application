@@ -1,6 +1,6 @@
 # ECHO Sorting Web Application
 
-Economic Choice Hospital Operator, codename E.C.H.O.
+Economic Choice Hospital Operator ==> E.C.H.O.
 
 Purpose: Sorting Hospitals in America by Injury Price and Location
 
