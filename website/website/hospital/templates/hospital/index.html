@@ -1,0 +1,14 @@
+{% extends 'hospital/base.html' %}
+
+{% block body %}
+{% if all_items %}
+	<h3>Here are all the hospital:</h3>
+	<ul>
+		{% for item in all_items %}
+		<li><a href="{% url 'hospital:detail' item.id %}">{{ item.name }}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<h3>There is no hospital</h3>
+{% endif %}
+{% endblock %}

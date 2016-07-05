@@ -1,0 +1,36 @@
+{% extends 'hospital/base.html' %}
+{% block body %}
+
+<img src="#">
+
+<h3>Name: </h3>
+	<ul>
+		 {{ item.name }}
+	</ul>
+
+
+<h3> Address: </h3>
+	<ul>
+		{{ item.street }} - {{ item.city }} - {{ item.state }} - {{ item.zipcode }}
+	</ul>
+
+<h3>Diagnosed area: </h3>
+	<ul>
+		{{ item.diagnosis_related_group }}
+	</ul>
+
+<h3>Covered charges: </h3>
+	<ul>
+		${{ item.avg_covered_charges }}
+	</ul>
+
+<h3>Total payments: </h3>
+	<ul>
+	${{ item.avg_total_payments }}
+	</ul>
+<h3>Medicare payments: </h3>
+	<ul>
+		${{ item.avg_medicare_payments }}
+	</ul>
+
+{% endblock %}
