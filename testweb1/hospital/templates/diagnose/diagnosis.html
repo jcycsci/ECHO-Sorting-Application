@@ -1,0 +1,79 @@
+{% extends 'hospital/base.html' %}
+{% load staticfiles %}
+{% block body %}
+	
+  <body>
+
+   <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><strong>Diagnosis</strong>
+                    <small class="color">It's our pleasure to assist you!</small>
+                </h1>
+                <p>We understand that an injury has occured, therefore, time is of the essence. So please click your presumed injury and let echosort work for you.</p>
+            </div>
+        </div>
+ </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Select what the injury is:</h4>
+        </div>
+
+        <div class="col-md-4">
+            <a href="{% url 'stroke' %}">
+                <p> Stroke </p>
+                <img src="https://ercraigranch.com/wp-content/uploads/2016/06/stroke-symptoms1.jpg" class="img-rounded " width=150 height=150>
+            </a> 
+            <br>   
+        </div>
+        
+        <div class="col-md-4">
+            <a href="{% url 'broken_limb' %}">
+                <p> Broken Limbs </p>
+                <img src="http://topnews.in/health/files/fixing-broken-bones.jpg" class="img-rounded img-fluid" width=150 height=150>
+            </a>    
+        </div> 
+        
+        <div class="col-md-4">
+            <a href="{% url 'poison' %}">
+                <p> Poison </p>
+                <img src="http://www.jchristoff.com/wp-content/uploads/2010/09/pics-poison1.jpg" class="img-rounded " width=150 height=150>
+            </a>    
+        </div>
+        
+        <div class="col-md-4">
+            <a href="{% url 'chest_pain' %}">
+                <p> Chest Pain </p>
+                <img src="http://localgum.com/wp-content/uploads/2015/04/ChestPain.jpg" class="img-rounded" width=150 height=150>
+            </a>    
+        </div>
+    
+        <div class="col-md-4">
+            <a href="{% url 'respiratory' %}">
+                <p> Respiratory Disorder  </p>
+                <img src="http://a360-wp-uploads.s3.amazonaws.com/wp-content/uploads/rtmagazi/2015/05/dreamstime_xs_40685256-466x350.jpg" class="img-rounded img-fluid" width=150 height=150> 
+            </a>    
+        </div>
+    
+        <div class="col-md-4">
+            <a href="{% url 'cardiac' %}">
+                <p> Cardiac Arrhythmia </p>
+                <img src="http://ekgprogram.com/wp-content/uploads/2014/02/EKG_Heart.jpg" class=img-rounded " width=150 height=150>
+            </a>    
+        </div>
+    </div>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+{% endblock %}
+
+

@@ -1,0 +1,19 @@
+{% extends 'hospital/base.html' %}
+
+
+{% block body %}
+{% if all_chest_pain %}
+<h4> list of ECOnomically SORTed hospitals for Chest Pains:</h4>
+<ul>
+{% for item in all_chest_pain %}
+	<li><a href="{% url 'hospital:detail' item.id %}"> {{ item.name }} </a></li>
+	<!--<li><a href="{% url 'hospital:detail' item.id %}}"> {{ item.name }}  -->
+	Cost ${{ item.avg_covered_charges }} 
+	<br> Located @ {{item.street}}, {{ item.city }} </a></li>
+{% endfor %}
+</ul>
+{% else %}
+	<h3>There is no hospital</h3>
+{% endif %}
+
+{% endblock %}

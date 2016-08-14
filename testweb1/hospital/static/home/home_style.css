@@ -1,0 +1,69 @@
+html,body{
+	 height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+}
+ body{
+
+	background: white url("images/background.jpg");
+}
+
+.navbar{
+	border-radius: 0;
+}
+
+.position{
+	text-align: center;
+	color: black;
+}
+
+.navbar-brand{
+	font-family: 'satisfy', cursive;
+	font-size: 30px;
+	font-style: italic;
+}
+
+.color{
+	padding: 10px;
+	color:white;
+	background-color: black;
+	font-size: 20;
+	opacity: .6;
+}
+
+li{
+	color{
+	padding: 10px;
+	color:white;
+	background-color: black;
+	font-size: 15;
+}
+}
+
+.hovered {
+	opacity: .7;
+}
+
+a {
+	text-decoration: inherit;
+	color: #ff0000;
+}
+
+.footer {
+  bottom: 0;  
+  margin-top: -60px; /* negative value of footer height */
+  height: 60px;
+  clear:both;
+  text-align: bottom;
+  font-size: 14px;
+}
+.well{
+	position: fixed;
+	width: 100%;
+	bottom: -20px;
+
+
+
+}

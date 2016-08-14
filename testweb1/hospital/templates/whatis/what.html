@@ -1,0 +1,49 @@
+{% extends 'hospital/base.html' %}
+{% load staticfiles %}
+{% block body %}
+	
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'hospital/mystyle.css' %}">
+    <!-- Custom CSS -->
+    <!--<link href="{% static 'hospital/mystyle.css' %}" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </header>
+  <body>
+        <div class="container">
+        <h2> <strong>ECOnomical SORTing</strong></h2>
+        <div class="row">
+            <div class="darkestBG col-sm-5" class= "color"></div>
+            <div class="darkestBG col-sm-7" class= "color">Most people in the United States do not have sufficient insurance to cover an injury. Hospitals have different prices for said injury, and patients want the best “bang” for their buck. In most instances, they want to spend the least amount of money possible, as they would be paying out of pocket for the procedure. ECHO Sort aims to allow users to find a hospital based on an injury from a list of given injuries from a diagnosis-related group. You can sort these hospitals by preference of price for given injury or the distance the hospital is from your location, thus allowing you to pick one that suits your urgency as well as economic restrains. </div>
+        <div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>   
+  </body>
+</html>
+
+
+{% endblock %}
+
+
