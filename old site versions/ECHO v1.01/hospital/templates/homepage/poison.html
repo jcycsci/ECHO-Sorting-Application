@@ -1,0 +1,18 @@
+{% extends 'hospital/base.html' %}
+
+
+{% block body %}
+{% if all_poisons %}
+<h4> list of ECOnomically SORTed hospitals for poisons:</h4>
+<ul>
+{% for item in all_poisons %}
+	<li><a href="{% url 'hospital:detail' item.id %}}"> {{ item.name }} 
+	<br>Cost ${{ item.avg_covered_charges }} 
+	<br> Located at {{item.street}}, {{ item.city }} </a></li>
+{% endfor %}
+</ul>
+{% else %}
+	<h3>There is no hospital</h3>
+{% endif %}
+
+{% endblock %}

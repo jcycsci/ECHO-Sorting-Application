@@ -1,0 +1,54 @@
+{% extends 'hospital/base.html' %}
+
+{% block body %}
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+
+    
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <h2> <strong>It's Nice to Meet You!!</strong></h2>
+        <div class="row">
+            <div class="darkestBG col-sm-5"></div>
+            <div class="darkestBG col-sm-7">We are the team behind ECHO. We're a small group of Hunter College Computer Science students working together to help the American people make smart financial descisions about their health.</div>
+        <div>
+    
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div class="row">
+            <div class="darkestBG col-sm-3"><a class="btn btn-default" href="{% url 'amina' %}"> Amina Bashir</a></div>
+             <div class="darkestBG col-sm-3"><a class="btn btn-default" href="{% url 'asif' %}"> Asif Chayan</a></div>
+            <div class="darkestBG col-sm-3"><a class="btn btn-default" href="{% url 'presley' %}"> Presley John</a></div>
+            <div class="darkestBG col-sm-3"><a class="btn btn-default" href="{% url 'jeffrey' %}"> Jeffrey Young</a></div>
+           
+            
+        </div>
+        <br></br>
+        <br></br>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+{% endblock %}
